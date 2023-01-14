@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Inter:wght@200&family=Poppins:wght@200;300;400;500&family=Roboto:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:wght@200&family=Poppins:wght@200;300;400;500&family=Roboto:wght@300;400;500&display=swap');
 
 * {
   margin: 0;
@@ -12,6 +12,14 @@
   --color-primary: #ce1212;
   --color-secondary: #EEEEEE;
   --color-secondary-contrast: #4f4f5a;
+  --color-secondary-two: #B6B6BF;
+  --color-secondaty-three: #676775;
+  --color-secondaty-four: #8d8d9b;
+
+
+  --font-primary: 'Roboto', sans-serif;
+  --font-secondary: 'Amatic SC', cursive, sans-serif;
+  --font-title: 'Poppins', sans-serif;
 }
 
 html {
@@ -20,7 +28,7 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-primary);
 }
 
 nav ul li a {
@@ -87,7 +95,7 @@ nav ul li:hover a {
 }
 
 .button-contact button{
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-title);
   font-weight: 300;
   font-size: 1.4rem;
   border: none;
@@ -128,14 +136,14 @@ nav ul li:hover a {
 }
 
 .dish-text span { 
-  font-family: 'Amatic SC', cursive, sans-serif;
+  font-family: var(--font-secondary);
   font-size: 2.4rem;
   font-weight: 700;
   color: var(--color-primary);
 }
 
 .dish-text h1 {
-  font-family: 'Amatic SC', cursive, sans-serif;
+  font-family: var(--font-secondary);
   font-weight: 700;
   font-size: 9.4rem;
   color: var(--color-text-default);
@@ -166,6 +174,151 @@ nav ul li:hover a {
   opacity: 0.9;
   border-radius: 4px;
 }
+
+.container-menu-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.menu-title {
+  text-align: center;
+}
+
+.menu-title > span {
+  text-align: center;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  color: var(--color-secondary-contrast);
+}
+
+.menu-title h2 {
+  font-family: var(--font-secondary);
+  font-size: 4.8rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.menu-title h2 > span {
+  color: var(--color-primary);
+}
+
+.menu-navegation ul {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-navegation ul li {
+  font-family: var(--font-primary);
+  position: relative;
+
+  cursor: pointer;
+}
+
+.menu-navegation ul li::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: var(--color-secondary-two);
+  transition: 0.3s;
+}
+
+.menu-navegation ul li:hover::before {
+  height: 1px;
+}
+
+.menu-navegation ul li:hover {
+  color: var( --color-primary);
+}
+
+/* .container-principal-dishes {} */
+
+.container-dessert-dishes {
+  margin: 120px 0;
+  background-color: #eee;
+  padding: 40px 0;
+}
+
+
+.principal-dishes, .dessert-dishes, .drinks-dishes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 90%;
+  margin: 0 auto;
+  gap: 4rem 0;
+
+  max-width: 1400px;
+}
+
+.dishe-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dishe-title span {
+  font-family: var(--font-primary);
+  font-size: 1.4rem;
+  color: var(--color-secondaty-three);
+}
+
+.dishe-title h2 {
+  font-family: 'Popping', sans-serif;
+  font-size: 3.6rem;
+  color: var(--color-primary);
+}
+
+.disshe {
+  display: flex;
+  gap: 2rem;
+}
+
+.disshe .disshe-img {
+  display: flex;
+  align-items: center;
+}
+
+.disshe .disshe-img img {
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.disshe .disshe-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 2rem;
+  border-left: 1px solid var(--color-secondary);
+}
+
+.container-dessert-dishes .disshe .disshe-desc {
+  border-left: 1px solid var(--color-secondary-two); 
+}
+
+.disshe .disshe-desc h3 {
+  font-family: var(--color-secondary-contrast);
+  font-weight: 400;
+}
+
+.disshe .disshe-desc p {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--color-secondaty-four);
+}
+
+.disshe .disshe-desc .preco {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
 
 @media (max-width: 1400px) {
   .carouseul {
