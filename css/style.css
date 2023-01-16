@@ -638,6 +638,7 @@ nav ul li:hover a {
   font-family: var(--font-primary);
   font-size: 1.4rem;
   color: var(--color-text-default);
+  margin: 0;
 }
 
 .container-form {
@@ -690,7 +691,6 @@ h4 {
 footer {
   margin: 0 auto;
   background-color: #1F1F24;
-  color: white;
 }
 
 .container-footer {
@@ -712,10 +712,73 @@ footer {
   gap: 15px;
 }
 
+.container-icon-footer h4 {
+  margin-bottom: 10px;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  font-family: var(--font-primary);
+}
+
+.container-icon-footer p {
+  font-size: 1.4rem;
+  font-family: var(--font-primary);
+  color: var(--color-secondary-two);
+  margin: 0;
+}
+
+.element-footer {
+  padding-top: 10px;
+}
+
 .container-icon-footer i {
+  color: white;
+  align-self: start;
   font-size: 2.4rem;
 }
 
+hr {
+  color: var(--color-secondary-two);
+  margin: 40px 0;
+}
+
+.copyright  h4 {
+  color: var(--color-secondary-two);
+  font-size: 1.4rem;
+  font-family: var(--font-primary);
+  text-align: center;
+  margin: 5px;
+}
+
+.midias {
+  display: flex;
+  gap: 10px;
+}
+
+.midia {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--color-secondary-two);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.midia:hover {
+  border-color: white;
+}
+
+.midia:hover i {
+  color: white;
+}
+
+.midia i {
+  color: var(--color-secondary-two);
+  font-size: 1.6rem;
+  align-self: center;
+}
 
 @media (max-width: 1400px) {
   .carouseul {
