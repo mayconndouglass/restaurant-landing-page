@@ -60,6 +60,52 @@ header .logo span {
   color: var(--color-primary);
 }
 
+.hamburguer {
+  display: none;
+  width: 20px;
+  border-top: 3px solid var(--color-secondary-contrast);
+  /* position: absolute; */
+  right: 7vw;
+  top: 2.5vh;
+}
+
+.hamburguer::after, .hamburguer::before {
+  content: "";
+  width: 30px;
+  height: 3px;
+  display: block;
+  background-color: var(--color-secondary-contrast);
+  margin-top: 5px;
+  transition: .3s;
+  position: relative;
+}
+
+header .button-contact.active .hamburguer {
+  border-top-color: transparent;
+}
+
+header .button-contact.active .hamburguer::before {
+  transform: rotate(135deg);
+}
+
+header .button-contact.active .hamburguer::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
+header .button-contact.active .hamburguer {
+  border-top-color: transparent;
+}
+
+header .button-contact.active .hamburguer::before {
+  transform: rotate(135deg);
+}
+
+header .button-contact.active .hamburguer::after {
+  transform: rotate(-135deg);
+  top: -7px;
+}
+
 nav ul {
   display: flex;
   gap: 20px;
@@ -93,6 +139,12 @@ nav ul li:hover::before {
 
 nav ul li:hover a {
   color: var(--color-text-default);
+}
+
+.button-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .button-contact button{
@@ -617,6 +669,7 @@ nav ul li:hover a {
 
 .contact-card {
   display: flex;
+  align-items: center;
   gap: 20px;
   padding: 30px;
   background-color: var(--color-secondary);
@@ -785,3 +838,270 @@ hr {
     width: 80%;
   }
 }
+
+@media (max-width: 1150px) {
+  .dish-image img {
+    width: 426px;
+  }
+
+  .container-carouseul {
+    height: 50vh;
+  }
+}
+
+@media (max-width: 1000px) {
+  .dish-image img {
+    width: 350px;
+  }
+
+  .container-carouseul {
+    height: 46vh;
+  }
+
+  .disshe .disshe-img img {
+    width: 100px;
+    height: 100px;
+  }
+
+  header {
+    width: 90%;
+  }
+
+  .chef-img figure {
+    height: 300px;
+  }
+
+  .carouseul {
+    width: 85%;
+  }
+}
+
+@media (max-width: 900px) {
+  .card-about-us {
+    width: 80%;
+  }
+
+  .map, .contact-details, .container-form {
+    width: 100%;
+  }
+
+  .container-chefs {
+    padding: 40px 0;
+  }
+
+  .container-footer {
+    width: 100%;
+  }
+
+  .hamburguer {
+    display: block;
+  }
+
+  header #menu {
+    visibility: hidden;
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    right: 0;
+    height: 0px;
+    transition: .6s;
+    background-color: white;
+    z-index: 100;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-y: hidden;
+  }
+
+  header nav.active #menu {
+    height: calc(50vh - 60px);
+    visibility: visible;
+  }
+}
+
+@media (max-width: 800px) {
+  html {
+    font-size: 50%;
+  }
+
+  .event {
+    padding: 20px 10px;
+  }
+
+  .card-img img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .midia {
+    width: 30px;
+    height: 30px;
+  }
+
+  .disshe .disshe-img img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .dish-image img {
+    width: 300px;
+  }
+
+  .container-carouseul {
+    height: 36vh;
+  }
+
+  .contact-card {
+    padding: 10px;
+  }
+
+  .map iframe {
+    height: 250px;
+  }
+
+  .container-contact-us {
+    margin-top: 80px;
+  }
+
+  .about-us {
+    padding: 40px 0 80px;
+  }
+
+  .container-dessert-dishes {
+    margin: 80px 0;
+  }
+
+  header {
+    height: 60px;
+  }
+
+  .container-menu-information {
+    padding: 40px;
+  }
+
+  .events {
+    margin: 80px 0 40px ;
+  }
+
+  .container-chefs {
+    margin: 80px auto 0;
+  }
+}
+
+@media (max-width: 722px) {
+  .dish-text h1 {
+    font-size: 7.4rem;
+  }
+
+  .container-event-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .custom, .birthday, .private {
+    min-height: 200px;
+    background-position: center;
+  }
+
+  .container-card {
+    margin-top: 40px;
+  }
+
+  .container-form {
+    margin: 0 auto 40px;
+  }
+
+  .carouseul {
+    flex-direction: column;
+  }
+
+  .container-carouseul {
+    height: 70vh;
+    padding: 40px 0;
+  }
+
+  .principal-dishes, .dessert-dishes, .drinks-dishes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .event {
+    padding: 20px 40px;
+  }
+
+  .container-icon i {
+    font-size: 2rem;
+  }
+
+  .container-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .container-data-footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container-cards-chefs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 40px;
+  }
+
+  .chef-card {
+    width: 100%;
+  }
+
+  .card-about-us {
+    width: 90%;
+  }
+
+  .container-cards-chefs {
+    padding: 0 20px;
+    gap: 10px;
+  }
+
+  .contact-details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-card {
+    padding: 20px 10px;
+  }
+
+  .dish-text {
+    padding-left: 40px;
+  }
+
+  .container-icon-footer i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .form-name-email {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 0;
+  }
+
+  .disshe .disshe-img img {
+    width: 70px;
+    height: 70px;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: var(--color-secondary);
+  }
+}
+
+@media (max-width: 450px) {
+  .container-cards-chefs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .chef-card {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+}
+  /* PAREI NO 450PX, RESPONSIVIDADE */
