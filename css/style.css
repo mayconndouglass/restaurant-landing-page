@@ -169,7 +169,8 @@ nav ul li:hover a {
 .container-carouseul {
   width: 100%;
   background-color: var(--color-secondary);
-  height: 60vh;
+  min-height: 60vh;
+  height: auto;
 }
 
 .carouseul {
@@ -855,7 +856,8 @@ hr {
   }
 
   .container-carouseul {
-    height: 50vh;
+    min-height: 50vh;
+    height: auto;
   }
 }
 
@@ -865,7 +867,8 @@ hr {
   }
 
   .container-carouseul {
-    height: 46vh;
+    min-height: 46vh;
+    height: auto;
   }
 
   .disshe .disshe-img img {
@@ -958,7 +961,8 @@ hr {
   }
 
   .container-carouseul {
-    height: 36vh;
+    min-height: 36vh;
+    height: auto;
   }
 
   .contact-card {
@@ -1025,7 +1029,8 @@ hr {
   }
 
   .container-carouseul {
-    height: 70vh;
+    min-height: 70vh;
+    height: auto;
     padding: 40px 0;
   }
 
