@@ -25,6 +25,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
 nav ul li a {
   text-decoration: none;
   color: #7f7f90;
+  padding: 5px 10px;
 }
 
 header {
@@ -116,7 +118,6 @@ nav ul li {
   position: relative;
   font-weight: 500;
   letter-spacing: 0.5px;
-  padding: 5px 10px;
   cursor: pointer;
 }
 
@@ -265,6 +266,11 @@ nav ul li:hover a {
   gap: 20px;
 }
 
+.menu-navegation a {
+  color: var(--color-text-default);
+  text-decoration: none;
+}
+
 .menu-navegation ul li {
   font-family: var(--font-primary);
   position: relative;
@@ -285,6 +291,7 @@ nav ul li:hover a {
 
 .menu-navegation ul li:hover::before {
   height: 1px;
+  color: var(--color-secondary);
 }
 
 .menu-navegation ul li:hover {
@@ -294,11 +301,14 @@ nav ul li:hover a {
 /* .container-principal-dishes {} */
 
 .container-dessert-dishes {
-  margin: 120px 0;
+  margin: 120px 0 0;
   background-color: #eee;
   padding: 80px 0;
 }
 
+.container-drinks-dishes {
+  padding-top: 120px;
+}
 
 .principal-dishes, .dessert-dishes, .drinks-dishes {
   display: grid;
@@ -1070,7 +1080,7 @@ hr {
   }
 
   .dish-text {
-    padding-left: 40px;
+    padding-left: 20px;
   }
 
   .container-icon-footer i {
@@ -1103,5 +1113,104 @@ hr {
     margin: 0 auto;
   }
 
+}
+
+@media (max-width: 400px) {
+  .container-drinks-dishes {
+    padding-top: 0;
+  }
+
+  .disshe {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .disshe .disshe-img img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .card-about-us {
+    flex-direction: column;
+  }
+
+  .card-img img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .chef-card {
+    width: 80%;
+  }
+
+  .container-cards-chefs {
+    gap: 20px;
+  }
+
+  .title h2 {
+    font-size: 4rem;
+  }
+
+  .container-icon-footer h4 {
+    font-size: 1.9rem;
+  }
+
+  .container-icon-footer p {
+    font-size: 1.6rem;
+  }
+
+  .element-footer {
+    padding-top: 0.7rem;
+  }
+
+  .container-icon-footer i {
+    font-size: 2.5rem;
+  }
+
+  .container-data-footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .container-data-footer {
+    justify-items: start;
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .midia {
+    width: 40px;
+    height: 40px;
+  }
+
+  .chef-card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 300px) {
+  .button-contact button {
+    display: none;
+  }
+
+  header .logo {
+    font-size: 2rem;
+  }
+
+  .hamburguer {
+    border-top: 2px solid var(--color-secondary-contrast);
+    margin-right: 10px;
+  }
+
+  .hamburguer::after, .hamburguer::before {
+    height: 2px;
+  }
+
+  .dish-text {
+    padding-left: 10px;
+  }
+
+  .chef-card {
+    width: 100%;
+  }
 }
   /* PAREI NO 450PX, RESPONSIVIDADE */
