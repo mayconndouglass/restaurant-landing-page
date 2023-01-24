@@ -8,6 +8,8 @@
   <h2>Lading page de um Restaurante</h2>
 </div>
 
+<hr>
+
 </br>
 
 
@@ -34,10 +36,13 @@
 ## Layout
 
 <!-- ![Lading Page](./assets/FireShot%20Capture%20001%20-%20Restaurant%20.png) -->
-<div align="center">
+<!-- <div align="center">
   <img src="./assets/FireShot%20Capture%20001%20-%20Restaurant%20.png" alt="Lading Page Restaurant" style="width:700px;">
-</div>
+</div> -->
 
+<div align="center">
+  <img src="./assets/gif-projeto.gif" alt="gif do projeto" style="width:700px;">
+</div>
 </br>
 
 
@@ -57,12 +62,13 @@ Acesse o deploy do projeto por aqui:<br>
 </br>
 
 ## Como rodar esse Projeto
-```bash
-# Você pode clonar o repositório através do terminal da sua máquina usando:
-$ git clone git@github.com:mayconndouglass/restaurant-landing-page.git
+Você pode clonar o repositório através do terminal da sua máquina usando:
 
-# E abrir o arquivo index.html no seu navegador
+```bash
+$ git clone git@github.com:mayconndouglass/restaurant-landing-page.git
 ```
+
+E abrir o arquivo index.html no seu navegador
 </br>
 
 ## Autor
