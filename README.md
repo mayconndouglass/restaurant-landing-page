@@ -23,7 +23,7 @@
 
 ## Funcionalidades do projeto
   - A LP contém as seguintes seções:
-    - Carrosel com os princípais pratos do restaurante
+    - [x] Carrosel com os princípais pratos do restaurante
     - [x] Menu dos pratos
     - [x] Depoimentos
     - [x] Eventos
@@ -67,8 +67,13 @@ Você pode clonar o repositório através do terminal da sua máquina usando:
 ```bash
 $ git clone git@github.com:mayconndouglass/restaurant-landing-page.git
 ```
+<<<<<<< HEAD
 
 E abrir o arquivo index.html no seu navegador
+=======
+E abrir o arquivo index.html no seu navegador
+
+>>>>>>> e85bdf8a186b30ca0b553b3f02b5550bb29c07e7
 </br>
 
 ## Autor
