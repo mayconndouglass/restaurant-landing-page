@@ -67,13 +67,11 @@ Você pode clonar o repositório através do terminal da sua máquina usando:
 ```bash
 $ git clone git@github.com:mayconndouglass/restaurant-landing-page.git
 ```
-<<<<<<< HEAD
 
 E abrir o arquivo index.html no seu navegador
 =======
 E abrir o arquivo index.html no seu navegador
 
->>>>>>> e85bdf8a186b30ca0b553b3f02b5550bb29c07e7
 </br>
 
 ## Autor
