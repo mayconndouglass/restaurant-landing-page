@@ -69,8 +69,6 @@ $ git clone git@github.com:mayconndouglass/restaurant-landing-page.git
 ```
 
 E abrir o arquivo index.html no seu navegador
-=======
-E abrir o arquivo index.html no seu navegador
 
 </br>
 
