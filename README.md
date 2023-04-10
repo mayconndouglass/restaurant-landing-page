@@ -1,4 +1,4 @@
-# Lading page Restaurant
+ <h1 align="center">Lading page Restaurant</h1>
 <!-- ![Lading Page](./assets/first-image.png) -->
 <div align="center">
   <img src="./assets/first-image.png" alt="Imagem LP restaurant" style="width:700px;">
